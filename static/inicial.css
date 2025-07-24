@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #E0B06E;
+}
+
+header {
+    background-color: #DB6F0A;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 10px;
+    width: 100%;
+    z-index: 1;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+a {
+    
+    border: 4px;
+    
+}
+aside {
+    width: 40%;
+    height: 20vh;
+    background-color: #5A878C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 10vh auto;
+   
+}
+
+.dropbtn {
+    background-color: #7C825B; 
+
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: center; 
+    height: 3.5vh;
+    color: aliceblue;
+
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    transform: translateY(175px);
+    background-color: #f9f9f8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #46582A;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    text-decoration: none;
+    font-size: medium;
+    padding: 15px;
+    background-color: #E0B06E;
+}
+
+.botoes {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 32%;
+    gap: 10px;
+    
+}
+
+.criarconta {
+    background-color:  #7C825B;
+    border-radius: 5px;
+    border: none;
+    height: 3.5vh;
+    color: aliceblue;
+}
+
+
+
+    .textol {
+        display: flex;
+    flex-direction: column; 
+    justify-self: flex-start;
+    justify-content: flex-start; 
+    align-items: center;
+    margin-right: 70%;
+    background-color: #3C5C60;
+    color:white ;
+    
+    }
+     .textor {
+        display: flex;
+    flex-direction: column; 
+    justify-self: flex-start;
+    justify-content: flex-start; 
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 70%;
+     background-color: #7C825B;
+     color: white;
+     
+    }
