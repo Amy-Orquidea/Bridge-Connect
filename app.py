@@ -82,12 +82,12 @@ def cadastroUsuario():
         telefone = request.form['telefone']
         endereco = request.form['endereco']
         if Usuarios.query.filter_by(email=email).first():
-           return jsonify({'mensagem': 'Email já cadastrado'}), 400
-       
+            return jsonify({'message': 'Email já cadastrado'}), 409
+        
         db.session.add(Usuarios(email=email, nome=nome, lingua=lingua, senha=senha, telefone=telefone, endereco=endereco))
         db.session.commit()
         return redirect('/')
-    return render_template('criarUsuario.html')
+    return render_template('cadastroUsuario.html')
 
 @app.route('/cadastro/advogado', methods=['GET', 'POST'])
 def cadastroAdvogado():

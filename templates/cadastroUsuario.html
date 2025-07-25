@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="usuario.css">
+    <link rel="stylesheet" href="/static/java.js">
+</head>
+
+<body>
+    <header>
+        <img src="Spring_20250724_073124_0000.png" alt="Logo">
+        <div class="links">
+            <a href="#assistenciaLegal">Assistência Legal Multilíngue</a>
+            <a href="#portalDeAjuda">Portal de Ajuda Humanitária</a>
+            <a href="#ValidacaoDeEmpresas">Validação de Empresas Éticas</a>
+            <a href="#quemSomos">Quem somos ?</a>
+        </div>
+
+        <div class="botoes">
+            <a href="login.html" target="_blank"><button class="entrar">ENTRAR</button></a>
+        </div>
+
+    </header>
+
+    <div class="topo">
+        <h3>Usuario</h3>
+    </div>
+    <div class="conteudo">
+        <form id="formulario" method="POST">
+            nome: <input type="text" name="nome" required>
+            <br>
+            e-mail: <input type="email" id="email" name="email" required>
+            <br>
+            telefone: <input type="tel" name="telefone" required>
+            <br>
+            endereço: <input type="text" name="endereco" required>
+            <br>
+            senha: <input type="password" id="password" name="senha" required>
+            <br>
+            Linguagem: <select name="lingua" required>
+                <option value="Africâner">Africâner</option>
+                <option value="Albanês">Albanês</option>
+                <option value="Alemão">Alemão</option>
+                <option value="Amárico">Amárico</option>
+                <option value="Árabe">Árabe</option>
+                <option value="Armênio">Armênio</option>
+                <option value="Azerbaijano">Azerbaijano</option>
+                <option value="Basco">Basco</option>
+                <option value="Bengali">Bengali</option>
+                <option value="Bielorrusso">Bielorrusso</option>
+                <option value="Birmanês">Birmanês</option>
+                <option value="Bósnio">Bósnio</option>
+                <option value="Búlgaro">Búlgaro</option>
+                <option value="Canarês">Canarês</option>
+                <option value="Catalão">Catalão</option>
+                <option value="Cazaque">Cazaque</option>
+                <option value="Cebuano">Cebuano</option>
+                <option value="Chichewa">Chichewa</option>
+                <option value="Chinês">Chinês</option>
+                <option value="Cingalês">Cingalês</option>
+                <option value="Coreano">Coreano</option>
+                <option value="Corso">Corso</option>
+                <option value="Crioulo Haitiano">Crioulo Haitiano</option>
+                <option value="Croata">Croata</option>
+                <option value="Curdo">Curdo</option>
+                <option value="Dinamarquês">Dinamarquês</option>
+                <option value="Eslovaco">Eslovaco</option>
+                <option value="Esloveno">Esloveno</option>
+                <option value="Espanhol">Espanhol</option>
+                <option value="Esperanto">Esperanto</option>
+                <option value="Estoniano">Estoniano</option>
+                <option value="Filipino">Filipino</option>
+                <option value="Finlandês">Finlandês</option>
+                <option value="Francês">Francês</option>
+                <option value="Frísio">Frísio</option>
+                <option value="Gaélico Escocês">Gaélico Escocês</option>
+                <option value="Galego">Galego</option>
+                <option value="Galês">Galês</option>
+                <option value="Georgiano">Georgiano</option>
+                <option value="Grego">Grego</option>
+                <option value="Gujarati">Gujarati</option>
+                <option value="Hauçá">Hauçá</option>
+                <option value="Havaiano">Havaiano</option>
+                <option value="Hebraico">Hebraico</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Hmong">Hmong</option>
+                <option value="Holandês">Holandês</option>
+                <option value="Húngaro">Húngaro</option>
+                <option value="Iídiche">Iídiche</option>
+                <option value="Igbo">Igbo</option>
+                <option value="Indonésio">Indonésio</option>
+                <option value="Inglês">Inglês</option>
+                <option value="Iorubá">Iorubá</option>
+                <option value="Irlandês">Irlandês</option>
+                <option value="Islandês">Islandês</option>
+                <option value="Italiano">Italiano</option>
+                <option value="Japonês">Japonês</option>
+                <option value="Javanês">Javanês</option>
+                <option value="Khmer">Khmer</option>
+                <option value="Laosiano">Laosiano</option>
+                <option value="Latim">Latim</option>
+                <option value="Letão">Letão</option>
+                <option value="Lituano">Lituano</option>
+                <option value="Luxemburguês">Luxemburguês</option>
+                <option value="Macedônio">Macedônio</option>
+                <option value="Malaiala">Malaiala</option>
+                <option value="Malaio">Malaio</option>
+                <option value="Malgaxe">Malgaxe</option>
+                <option value="Maltês">Maltês</option>
+                <option value="Maori">Maori</option>
+                <option value="Marata">Marata</option>
+                <option value="Mongol">Mongol</option>
+                <option value="Nepalês">Nepalês</option>
+                <option value="Norueguês">Norueguês</option>
+                <option value="Odia">Odia</option>
+                <option value="Pashto">Pashto</option>
+                <option value="Persa">Persa</option>
+                <option value="Polonês">Polonês</option>
+                <option value="Português">Português</option>
+                <option value="Punjabi">Punjabi</option>
+                <option value="Quirguiz">Quirguiz</option>
+                <option value="Romeno">Romeno</option>
+                <option value="Russo">Russo</option>
+                <option value="Samoano">Samoano</option>
+                <option value="Sérvio">Sérvio</option>
+                <option value="Sesotho">Sesotho</option>
+                <option value="Shona">Shona</option>
+                <option value="Sindi">Sindi</option>
+                <option value="Somali">Somali</option>
+                <option value="Suaíli">Suaíli</option>
+                <option value="Sundanês">Sundanês</option>
+                <option value="Sueco">Sueco</option>
+                <option value="Tadjique">Tadjique</option>
+                <option value="Tâmil">Tâmil</option>
+                <option value="Tcheco">Tcheco</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Tailandês">Tailandês</option>
+                <option value="Turco">Turco</option>
+                <option value="Ucraniano">Ucraniano</option>
+                <option value="Uigur">Uigur</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Uzbeque">Uzbeque</option>
+                <option value="Vietnamita">Vietnamita</option>
+                <option value="Xhosa">Xhosa</option>
+                <option value="Zulu">Zulu</option>
+            </select><br>
+            <button type="submit">enviar</button>
+        </form>
+    </div>
+    <div class="barbottom">
+        <a href="#advogado">advogado</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#ONG">ONG</a>
+        <a href="#usuario" class="active">usuario</a>
+    </div>
+        <script src="/static/java.js"></script>
+</body>
+
+</html>
