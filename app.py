@@ -69,11 +69,22 @@ with app.app_context():
     
 @app.route('/', methods=['GET'])
 def index():
-    return render_template('index.html')
+    return render_template('Pagina_Principal.html')
+
+@app.route('/assistencia', methods=['GET'])
+def assistenciaLegal():
+    return render_template('Assistencia_Legal.html')
+
+@app.route('/portal/help', methods=['GET'])
+def portalAjuda():
+    return render_template('Portal_De_Ajuda.html')
+
+@app.route('/empresas', methods=['GET'])
+def empresasArea():
+    return render_template('Validacao_De_Empresas.html')
 
 @app.route('/cadastro/usuario', methods=['GET', 'POST'])
 def cadastroUsuario():
-    # advogado = Advogados.query.all()
     if request.method == 'POST':
         email = request.form['email']
         nome = request.form['nome']
@@ -97,13 +108,13 @@ def cadastroAdvogado():
         telefone = request.form['telefone']
         lingua = request.form['lingua']
         senha = request.form['senha']
-        if Usuarios.query.filter_by(email=email).first():
-           return jsonify({'mensagem': 'Email já cadastrado'}), 400
+        if Advogados.query.filter_by(email=email).first():
+           return jsonify({'mensagem': 'Email já cadastrado'}), 409
        
         db.session.add(Advogados(email=email, nome=nome, telefone=telefone, lingua=lingua, senha=senha))
         db.session.commit()
         return redirect('/')
-    return render_template('criarAdvogado.html')
+    return render_template('cadastroAdvogado.html')
 
 @app.route('/cadastro/ong', methods=['GET', 'POST'])
 def cadastroOng():
@@ -113,7 +124,7 @@ def cadastroOng():
         db.session.add(Ongs(nome=nome, endereco=endereco))
         db.session.commit()
         return redirect('/')
-    return render_template('.html')
+    return render_template('cadastroOng.html')
 
 @app.route('/cadastro/empresa', methods=['GET', 'POST'])
 def cadastroEmpresa():
@@ -126,27 +137,27 @@ def cadastroEmpresa():
         db.session.add(Empresas(nome=nome, salario=salario, especificacoes=especificacoes, endereco=endereco, contato=contato))
         db.session.commit()
         return redirect('/')
-    return render_template('.html')
+    return render_template('cadastroEmpresa.html')
 
 @app.route('/lista/usuarios', methods=['GET'])
 def listarUsuarios():
     usuarios = Usuarios.query.all()
-    return render_template('listarUsuario.html', usuarios=usuarios)
+    return render_template('listaUsuarios.html', usuarios=usuarios)
 
 @app.route('/lista/advogados', methods=['GET'])
 def listaAdvogados():
     advogados = Advogados.query.all()
-    return render_template('listarAdvogado.html', advogados=advogados)
+    return render_template('listaAdvogados.html', advogados=advogados)
 
 @app.route('/lista/ongs', methods=['GET'])
 def listarOngs():
     ongs = Ongs.query.all()
-    return render_template('.html', ongs=ongs)
+    return render_template('listaOngs.html', ongs=ongs)
 
 @app.route('/lista/empresas', methods=['GET'])
 def listarEmpresas():
     empresas = Empresas.query.all()
-    return render_template('.html', empresas=empresas)
+    return render_template('listaEmpresas.html', empresas=empresas)
 
 @app.route('/edit/usuario/<int:id>', methods=['GET', 'POST'])
 def editarUsuario(id):
@@ -169,6 +180,8 @@ def editarAdvogado(id):
         advogado.nome = request.form['nome']
         advogado.email = request.form['email']
         advogado.telefone = request.form['telefone']
+        advogado.lingua = request.form['lingua']
+        advogado.senha = request.form['senha']
         db.session.commit()
         return redirect('/lista/advogados')
     return render_template('editarAdvogado.html', advogado=advogado)
@@ -181,7 +194,7 @@ def editarOng(id):
         ong.endereco = request.form['endereco']
         db.session.commit()
         return redirect('/lista/ongs')
-    return render_template('.html', ong=ong)
+    return render_template('editarOng.html', ong=ong)
 
 @app.route('/edit/empresa/<int:id>', methods=['GET', 'POST'])
 def editarEmpresa(id):
@@ -194,18 +207,18 @@ def editarEmpresa(id):
         empresa.contato = request.form['contato']
         db.session.commit()
         return redirect('/lista/empresas')
-    return render_template('.html', empresa=empresa)
+    return render_template('editarEmpresa.html', empresa=empresa)
 
-@app.route('/delete/usuario/<email>', methods=['GET'])
-def deletarUsuario(email):
-    usuario = Usuarios.query.get_or_404(email)
+@app.route('/delete/usuario/<int:id>', methods=['GET'])
+def deletarUsuario(id):
+    usuario = Usuarios.query.get_or_404(id)
     db.session.delete(usuario)
     db.session.commit()
     return redirect('/lista/usuarios')
 
-@app.route('/delete/advogado/<email>', methods=['GET'])
-def deletarAdvogado(email):
-    advogado = Advogados.query.get_or_404(email)
+@app.route('/delete/advogado/<int:id>', methods=['GET'])
+def deletarAdvogado(id):
+    advogado = Advogados.query.get_or_404(id)
     db.session.delete(advogado)
     db.session.commit()
     return redirect('/lista/advogados')
@@ -222,7 +235,7 @@ def deletarEmpresa(id):
     empresa = Empresas.query.get_or_404(id)
     db.session.delete(empresa)
     db.session.commit()
-    return redirect('/lista/empresas')
+    return redirect('/lista/empresas')    
 
 if __name__ == '__main__':
     app.run(debug=True)
