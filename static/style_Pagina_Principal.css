@@ -1,0 +1,149 @@
+ body {
+    background-color: #d0c9b6;
+    margin: auto;
+    height: 100vh;
+    width: auto;
+}
+
+footer {
+   background-color: #AF7A1F;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    text-align: center;        
+    margin: 0;
+    border-radius: 20px;
+    color: white
+}
+
+
+header {
+    background-color: #3C5C60;
+    height: 13vh;
+    display: flex;
+    margin: 10px ;
+    border-radius: 10vh;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    text-decoration: none;
+    font-size: medium;
+    padding: 15px;
+    color: white;
+    gap: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 32%;
+    gap: 10px;
+}
+
+.criarconta,
+.entrar {
+    background-color: #D9840D;
+    border-radius: 5px;
+    height: 3.5vh;
+    color: aliceblue;
+    border: none;
+}
+
+.entrar {
+    color: white;
+}
+
+
+
+aside {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 50px; 
+}
+
+
+
+#Assistencia_Legal,
+#Portal_De_Ajuda,
+#Validacao_De_Empresas,
+#Quem_Somos {
+    text-align: center; 
+    width: 80%; 
+    margin: 0 auto 50vh auto; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+    
+}
+
+#Assistencia_Legal h2 ,#Portal_De_Ajuda h2, #Validacao_De_Empresas h2,#Quem_Somos h2 {
+    font-weight:normal;
+}
+
+
+#Assistencia_Legal{
+    background-color: #46582A;
+    border-radius: 30px;
+    height: 80vh;
+    color: aliceblue;
+    border: none;
+    margin-left: 10vh;
+    margin: 10vh;
+}
+
+#Portal_De_Ajuda{
+    background-color: #5A878C;
+    border-radius: 30px;
+    height: 80vh;
+    color: aliceblue;
+    border: none;
+    margin-left: 10vh;
+    margin: 10vh;
+    
+}
+
+#Validacao_De_Empresas{
+    background-color: #3C5C60;
+    border-radius: 30px;
+    height: 80vh;
+    color: aliceblue;
+    border: none;
+    margin-left: 10vh; 
+    margin: 10vh;
+}
+
+
+#assistencia_legal,
+#portal_de_ajuda,
+#validacao_de_empresa {
+    background-color: #D9840D;
+    border-radius: 30px;
+    height: 3.5vh;
+    color: aliceblue;
+    border: none;
+    
+}
+
+#Quem_Somos{
+    background-color: #A39559;
+    border-radius: 30px;
+   color: white;
+    margin: 10vh;
+}
+
+

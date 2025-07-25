@@ -1,0 +1,100 @@
+ body {
+    background-color: #d0c9b6;
+    margin: auto;
+    height: 100vh;
+    width: auto;
+}
+
+header {
+    background-color: #3C5C60;
+    height: 13vh;
+    display: flex;
+    margin: 10px 0 0 0;
+    border-radius: 10vh;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    text-decoration: none;
+    font-size: medium;
+    padding: 15px;
+    color: white;
+    gap: 20px;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 32%;
+    gap: 10px;
+}
+
+.criarconta,
+.entrar {
+    background-color: #4C7031;
+    border-radius: 5px;
+    height: 3.5vh;
+    color: aliceblue;
+    border: none;
+}
+
+.entrar {
+    color: white;
+}
+
+footer {
+    background-color: #AF7A1F;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    text-align: center;        
+    margin: 0;
+    border-radius: 20px;
+    color: white
+}
+
+
+
+#SaibaMais_PortalDeAjuda h2 {
+    font-weight: normal;
+}
+
+#CadastroONG,
+#Voltar {
+    background-color: #D9840D;
+    border-radius: 30px;
+    height: 3.5vh;
+    color: aliceblue;
+    border: none;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    
+}
+
+#SaibaMais_PortalDeAjuda{
+    background-color: #5A878C;
+    border-radius: 30px;
+    height: 80vh;
+    color: aliceblue;
+    border: none;
+    margin-left: 10vh;
+    margin: 10vh;
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+     flex-direction: column; 
+    gap: 15px;
+     text-align: center;
+}
