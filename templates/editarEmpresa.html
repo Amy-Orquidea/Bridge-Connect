@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/form.css">
+</head>
+
+<body>
+    <header>
+        <img src="/static/img/Spring_20250724_073124_0000.png" alt="Logo">
+        <div class="links">
+            <a href="#assistenciaLegal">Assistência Legal Multilíngue</a>
+            <a href="#portalDeAjuda">Portal de Ajuda Humanitária</a>
+            <a href="#ValidacaoDeEmpresas">Validação de Empresas Éticas</a>
+            <a href="#quemSomos">Quem somos ?</a>
+        </div>
+
+        <div class="botoes">
+            <a href="login.html" target="_blank"><button class="entrar">ENTRAR</button></a>
+            <a href="/" target="_blank"><button class="entrar">VOLTAR</button></a>
+        </div>
+
+    </header>
+
+    <div class="topo">
+        <h3>Empresa</h3>
+    </div>
+    <div class="conteudo">
+        <form id="formulario" method="POST">
+            nome: <input type="text" name="nome" value="{{empresa.nome}}" required>
+            <br>
+            salario <input type="number" step="0.01" id="salario" name="salario" value="{{empresa.salario}}" required>
+            <br>
+            contato: <input type="text" name="contato" value="{{empresa.contato}}" required>
+            <br>
+            endereço: <input type="text" name="endereco" value="{{empresa.endereco}}" required>
+            <br>
+            especificacoes: <input type="text" name="especificacoes" value="{{empresa.especificacoes}}" required>
+            <br>
+            <a href="/empresas"><button type="submit">enviar</button></a>
+        </form>
+    </div>
+    <footer>
+        <a href="#advogado">advogado</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#ONG">ONG</a>
+        <a href="#usuario" class="active">usuario</a>
+    </footer>
+</body>
+
+</html>

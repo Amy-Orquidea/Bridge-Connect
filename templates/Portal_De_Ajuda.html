@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Ajuda Humanitária</title><link rel="stylesheet" href="style_Portal_De_Ajuda.css">
+    <title>Portal de Ajuda Humanitária</title><link rel="stylesheet" href="../static/style_Portal_De_Ajuda.css">
 </head>
 <body>
      <header>
-        <img src="Spring_20250724_073124_0000 copy.png" alt="Logo" >
+        <img src="/static/img/Spring_20250724_073124_0000.png " alt="Logo" >
           <div class="links">
         <a href="#Assistencia_Legal">Assistência Legal Multilíngue</a>
         <a href="#Portal_De_Ajuda">Portal de Ajuda Humanitária(ONG'S)</a>
@@ -16,19 +16,28 @@
       </div>
 
         <div class="botoes"> 
-            <a href="criarconta.html"target="_blank"><button class="criarconta">CRIAR CONTA</button></a>
-          <a href="login.html"target="_blank"><button class="entrar">ENTRAR</button></a> 
+            <a href="/cadastro/usuario.html"target="_blank"><button class="criarconta">CRIAR CONTA</button></a>
         </div>
 
     </header>
 
     <aside>
          <section id="SaibaMais_PortalDeAjuda">
-            <h2>shdkagdfkgaefaoçdhczbx.vblasukdfsçufçsgjlhslçhgoç
+            <h2><strong>Importância:</strong> <br>Facilita a conexão entre pessoas em situação de <br>
+                vulnerabilidade e organizações que oferecem suporte, como alimentação, abrigo, <br>
+                assistência jurídica ou capacitação profissional. <br>
+                <strong>Funcionamento :</strong><br> Reúne e organiza dados geográficos <br>
+                 e temáticos de ONGs ativas na região do usuário. Um sistema de filtragem  <br>
+                 permite buscar por tipo de ajuda, localização e disponibilidade.
                  </h2 >
             <button id="CadastroONG" onclick="">Cadastrar ONG'S</button>
+            <button id="VerONG" onclick="">Ver ONG'S</button>
             <button id="Voltar" onclick="">Voltar para página inicial</button>
+
         </section>
+        <div class="map-container">
+            <img src="/static/img/Médecins Sans Frontières.png " alt="Map showing locations of NGOs" style="border-radius: 10px; margin-top: 20px;">
+        </div>
     </aside>
     
     <footer>
@@ -46,6 +55,6 @@
             <li>Sara de Lima e Silva</li>
         </ul>
     </footer>
-    <script src="script_Portal_De_Ajuda.js"></script>
+    <script src="/static/script_Portal_De_Ajuda.js"></script>
 </body>
 </html>

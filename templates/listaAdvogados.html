@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assistência Legal Multilíngue</title>
-    <link rel="stylesheet" href="/static/style_Assistencia_Legal.css">
+    <link rel="stylesheet" href="/static/lista.css">
 </head>
 <body>
      <header>
@@ -25,16 +25,26 @@
 
     <aside>
          <section id="SaibaMais_AssistenciaLegal">
-            <h2><strong>Importância:</strong> <br> Pemite o acesso à justiça para pessoas que <br>
-                falam diferentes idiomas, especialmente imigrantes, refugiados e populações marginalizadas. <br>
-                <strong>Funcionamento :</strong><br> Utiliza inteligência artificial e tradução <br>
-                automática para oferecer orientações legais básicas em vários idiomas. Pode ajudar com <br>
-                dúvidas sobre direitos trabalhistas, moradia, documentação e acesso a serviços públicos.
-                 </h2 >
-            <button id="Cadastrar_de_advogados" onclick="">Cadastrar Advogados</button>
-            <button id="listar" onclick="">Lista de Advogados</button>
-            <button id="listar2" onclick="">Lista de Clientes</button>
-            <button id="Voltar" onclick="">Voltar para página inicial</button>
+            <h1>Advogados</h1>
+            <table>
+                <tr>
+                    <th> Nome </th>
+                    <th> Email </th>
+                    <th> Telefone </th>
+                    <th> Lingua </th>
+                </tr>
+                {%for a in advogados%}
+                <tr>
+                    <td>{{a.nome}}</td>
+                    <td>{{a.email}}</td>
+                    <td>{{a.telefone}}</td>
+                    <td>{{a.lingua}}</td>
+                    <td><a href="/edit/advogado/{{a.id}}"><button>editar</button></a></td>
+                    <td><a href="/delete/advogado/{{a.id}}"><button>excluir</button></a></td>
+                </tr>
+                {% endfor %}
+            </table>
+            <button id="VoltarAdvogado" onclick="">Voltar</button>
         </section>
     </aside>
     
@@ -53,6 +63,6 @@
             <li>Sara de Lima e Silva</li>
         </ul>
     </footer>
-    <script src="/static/script_Assistencia_Legal.js"></script>
+    <script src="/static/javalista.js"></script>
 </body>
 </html>

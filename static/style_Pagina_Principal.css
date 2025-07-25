@@ -1,12 +1,17 @@
  body {
-    background-color: #d0c9b6;
+    background: linear-gradient(135deg, #F0C17B, #E7AE5D);
     margin: auto;
     height: 100vh;
     width: auto;
+    background-size: 500% 500%;
+    
 }
 
+
+
+
 footer {
-   background-color: #AF7A1F;
+    background: linear-gradient(to bottom, #E39E3D, #DEB26A);
     height: 30vh;
     display: flex;
     align-items: center;
@@ -53,7 +58,7 @@ header {
 
 .criarconta,
 .entrar {
-    background-color: #D9840D;
+    background-color: #4C7031;
     border-radius: 5px;
     height: 3.5vh;
     color: aliceblue;
@@ -97,7 +102,7 @@ aside {
 
 
 #Assistencia_Legal{
-    background-color: #46582A;
+    background: linear-gradient(to bottom, #7C825B, #46582A);
     border-radius: 30px;
     height: 80vh;
     color: aliceblue;
@@ -107,7 +112,7 @@ aside {
 }
 
 #Portal_De_Ajuda{
-    background-color: #5A878C;
+    background: linear-gradient(to bottom, #5A878C, #3C5C60);
     border-radius: 30px;
     height: 80vh;
     color: aliceblue;
@@ -118,7 +123,7 @@ aside {
 }
 
 #Validacao_De_Empresas{
-    background-color: #3C5C60;
+    background: linear-gradient(to bottom, #e6a64c, #DE9125);
     border-radius: 30px;
     height: 80vh;
     color: aliceblue;
@@ -140,7 +145,7 @@ aside {
 }
 
 #Quem_Somos{
-    background-color: #A39559;
+    background: linear-gradient(to bottom, #D9840D, #DB6F0A);
     border-radius: 30px;
    color: white;
     margin: 10vh;

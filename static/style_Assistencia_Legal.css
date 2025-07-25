@@ -1,8 +1,9 @@
  body {
-    background-color: #d0c9b6;
+    background: linear-gradient(135deg, #F0C17B, #E7AE5D);;
     margin: auto;
     height: 100vh;
     width: auto;
+    background-size: 500% 500%;
 }
 
 header {
@@ -52,7 +53,7 @@ header {
 }
 
 footer {
-    background-color: #AF7A1F;
+    background: linear-gradient(to bottom, #E39E3D, #DEB26A);
     height: 30vh;
     display: flex;
     align-items: center;
@@ -70,7 +71,7 @@ footer {
 }
 
 #Cadastrar_de_advogados,
-#Voltar {
+#Voltar,#listar,#listar2 {
     background-color: #D9840D;
     border-radius: 30px;
     height: 3.5vh;
@@ -87,7 +88,7 @@ footer {
 
 
 #SaibaMais_AssistenciaLegal{
-    background-color: #46582A;
+    background:linear-gradient(to bottom, #7C825B, #46582A);
     border-radius: 30px;
     height: 80vh;
     color: aliceblue;

@@ -1,9 +1,8 @@
- body {
-    background: linear-gradient(135deg, #F0C17B, #E7AE5D);;
+body {
+    background-color: #d0c9b6;
     margin: auto;
     height: 100vh;
     width: auto;
-    background-size: 500% 500%;
 }
 
 header {
@@ -25,6 +24,7 @@ header {
     color: white;
     gap: 20px;
 }
+
 .links a {
     text-decoration: none;
     color: white;
@@ -52,7 +52,7 @@ header {
 }
 
 footer {
-    background: linear-gradient(to bottom, #E39E3D, #DEB26A);
+    background-color: #AF7A1F;
     height: 30vh;
     display: flex;
     align-items: center;
@@ -63,14 +63,21 @@ footer {
     color: white
 }
 
+table,th,td{
+    border: 1px, whitesmoke, solid
+   
+}
+td{
+    padding-right: 12px;
+    padding-left: 12px;
+}
 
-
-#SaibaMais_PortalDeAjuda h2 {
+#SaibaMais_AssistenciaLegal h2 {
     font-weight: normal;
 }
 
-#CadastroONG,
-#Voltar ,#VerONG{
+#Cadastrar_de_advogados,
+#VoltarAdvogado,#listar {
     background-color: #D9840D;
     border-radius: 30px;
     height: 3.5vh;
@@ -84,8 +91,10 @@ footer {
     
 }
 
-#SaibaMais_PortalDeAjuda{
-    background:  linear-gradient(to bottom, #5A878C, #3C5C60);
+
+
+#SaibaMais_AssistenciaLegal{
+    background-color: #46582A;
     border-radius: 30px;
     height: 80vh;
     color: aliceblue;
@@ -98,17 +107,4 @@ footer {
      flex-direction: column; 
     gap: 15px;
      text-align: center;
-}
-
-.map-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 10vh;
-}
-.map-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
 }

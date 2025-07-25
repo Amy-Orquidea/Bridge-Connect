@@ -26,21 +26,22 @@
     </header>
 
     <div class="topo">
-        <h3>Usuário</h3>
+        <h3>Advogado</h3>
     </div>
     <div class="conteudo">
         <form id="formulario" method="POST">
-            nome: <input type="text" name="nome" required>
+            nome: <input type="text" name="nome" value="{{usuario.nome}}" required>
             <br>
-            e-mail: <input type="email" id="email" name="email" required>
+            e-mail: <input type="email" id="email" name="email" value="{{usuario.email}}" required>
             <br>
-            telefone: <input type="tel" name="telefone" required>
+            telefone: <input type="tel" name="telefone" value="{{usuario.telefone}}" required>
             <br>
-            endereço: <input type="text" name="endereco" required>
+            endereco: <input type="text" id="endereco" name="endereco" value="{{usuario.endereco}}" required>
             <br>
-            senha: <input type="password" id="password" name="senha" required>
+            senha: <input type="password" id="password" name="senha" value="{{usuario.senha}}" required>
             <br>
             Linguagem: <select name="lingua" required>
+                <option value="{{usuario.lingua}}">{{usuario.lingua}}</option>
                 <option value="Africâner">Africâner</option>
                 <option value="Albanês">Albanês</option>
                 <option value="Alemão">Alemão</option>
@@ -156,7 +157,6 @@
         <a href="#ONG">ONG</a>
         <a href="#usuario" class="active">usuario</a>
     </footer>
-    <script src="/static/javaUsuario.js"></script>
 </body>
 
 </html>

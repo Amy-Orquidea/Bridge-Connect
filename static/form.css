@@ -1,0 +1,91 @@
+body{
+    background-color: #DB6F0A;
+}
+.topo{
+    background-color: #FFD187;
+    height: 8vh;
+    width: 50vw;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.conteudo{
+    background-color:#7C825B ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    height:35Vh;
+    width: 60Vw;
+    border-radius: 25px;
+    color: beige;
+    margin: 35px;
+    margin-top: 45px;
+    font-size: larger;
+
+}
+footer{
+    background-color: #3C5C60;
+    height: 10Vh;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    display: flex;
+    justify-content: center;
+    justify-self: end;
+    align-items: center;
+    border-radius: 25px;
+    margin-top: 12%;
+}
+footer a {
+    color: antiquewhite;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+header {
+    background-color: #3C5C60;
+    height: 13vh;
+    display: flex;
+    margin: 10px 0 0 0;
+    border-radius: 10vh;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    text-decoration: none;
+    font-size: medium;
+    padding: 15px;
+    color: white;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 32%;
+    gap: 10px;
+}
+
+.criarconta,
+.entrar {
+    background-color: #4C7031;
+    border-radius: 5px;
+    height: 3.5vh;
+    color: aliceblue;
+    border: none;
+}
+
+.entrar {
+    color: white;
+}
